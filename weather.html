@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<div>
+    <div id="innerBody">
+        <div id="container1">
+            <div>
+                <img id="umbrella_img" src="images/Green Umbrella.L07.watermarked.2k.png" alt="umbrella image">
+            </div>
+            <div id="appNameContainer">
+                <span>Cloudster</span>
+                <span>Weather App</span>
+            </div>
+            <span id="arrowIcon">
+                <i class="ri-arrow-right-line"></i>
+            </span>
+        </div>
+        <div id="container2">
+            <span id="backToHome">
+                <i class="ri-arrow-left-s-line"></i>
+            </span>
+            <div id="input_container">
+                <input id="input_box" type="search" autocomplete="off" placeholder="Enter City">
+                <button id="search_btn" type="button">
+                    <i class="ri-search-line"></i>
+                </button>
+            </div>
+            <div id="error">
+                <p>Please enter a valid city name.</p>
+            </div>
+            <div id="before_result">
+                <p>Search a city name to get the weather report.</p>
+            </div>
+            <div id="result">
+                <h2 id="city_name"></h2>
+                <h3 id="description"></h3>
+                <h2 id="temp"></h2>
+                <img id="description_img" src="images/clear.png" alt="">
+                <div id="extra_information">
+                    <div id="wind_speed_container">
+                        <img src="images/wind.png" alt="">
+                        <div>
+                            <span id="wind_speed"></span>
+                            <span>wind-speed</span>
+                        </div>
+                    </div>
+                    <div id="humidity_container">
+                        <img src="images/humidity.png" alt="">
+                        <div>
+                            <span id="humidity"></span>
+                            <span>humidity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="weather.js"></script>
+    </body>
+
+</html>
