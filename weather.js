@@ -37,22 +37,22 @@ let checkWeather = async (city) => {
 
     switch (data.weather[0].main) {
       case "Clear":
-        descriptionImg.src = "images/clear.png";
+        descriptionImg.src = "clear.png";
         break;
       case "Clouds":
-        descriptionImg.src = "images/clouds.png";
+        descriptionImg.src = "clouds.png";
         break;
       case "Drizzle":
-        descriptionImg.src = "images/drizzle.png";
+        descriptionImg.src = "drizzle.png";
         break;
       case "Mist":
-        descriptionImg.src = "images/mist.png";
+        descriptionImg.src = "mist.png";
         break;
       case "Rain":
-        descriptionImg.src = "images/rain.png";
+        descriptionImg.src = "rain.png";
         break;
       case "Snow":
-        descriptionImg.src = "images/snow.png";
+        descriptionImg.src = "snow.png";
         break;
 
       default:
